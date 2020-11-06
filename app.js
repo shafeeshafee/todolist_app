@@ -73,11 +73,7 @@ darkModeButton.addEventListener('click', function () {
 });
 
 
-<<<<<<< HEAD
 // new card creator function
-=======
-// new card creator
->>>>>>> effe0878d889e656d56b09bc120d07c469462c2a
 function newTaskCard() {
     if (input.value) {
         let newTask = new Task(input.value, `Added: ${showTime(new Date)}`).addTask();
