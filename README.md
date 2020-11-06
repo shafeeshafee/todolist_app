@@ -1,5 +1,4 @@
-# todolist_app
-SpeedNotes: A normal todo-list app, with ES6 Class to create todo nodes
+# SpeedNotes - Need to jot down a few tasks/notes? <br> Here's the app for you!
 
 ## Features Include:
 
