@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Josefin+Sans&display=swap");
+/* 
+font-family: 'Josefin Sans', sans-serif; 
+*/
+
+html {
+	font-family: Arial;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Josefin Sans", sans-serif;
+	background: url(img/bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+input {
+	padding: 1em;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+
+.divbody {
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#add {
+	cursor: pointer;
+	margin: 10px;
+	font-size: 1em;
+	background: teal;
+	border: none;
+	color: white;
+	padding: 0.5em 2em;
+}
+
+.faded {
+	text-overflow: ellipsis;
+	position: relative;
+	cursor: pointer;
+	font-family: "DM Sans", sans-serif;
+	width: 80%;
+	margin-top: 10px;
+	padding: 0 2em;
+	background: rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: space-between;
+}
+
+.faded p {
+	padding-top: 5px;
+	position: absolute;
+	left: 45%;
+}
+
+.faded button {
+	font-family: "DM Sans", sans-serif;
+	background: rgb(189, 117, 117);
+	border: none;
+	color: white;
+	font-size: 19px;
+	margin: 10px;
+}
+
+.faded button:hover {
+	background: green;
+}
+
+.striked {
+	text-decoration: line-through;
+	font-style: italic;
+}
+
+.color-striked {
+	background-color: rgba(185, 164, 44, 0.5);
+}
+
+header {
+	width: 30%;
+	margin: 0 auto;
+	text-align: center;
+	letter-spacing: 3px;
+	padding: 2em;
+	background: rgba(53, 119, 131, 0.3);
+	color: white;
+}
+
+.container {
+	font-family: "DM Sans", sans-serif;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.2s;
+}
+
+#darkmode {
+	cursor: pointer;
+	font-size: 5em;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 10%;
+	background-color: rgba(53, 119, 131, 0.3);
+	color: white;
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+.bgImgToggle {
+	background-image: url("img/darkbg.jpg");
+}
+
+.textWhite {
+	background: rgba(0, 0, 0, 0.692) !important;
+	color: white !important;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
