@@ -81,7 +81,7 @@ function newTaskCard() {
     }
 }
 
-// display time
+// display time function
 function showTime(date) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
